@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+Turniej-Axelroda
+Projekt w React na zaliczenie przedmiotu.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Opis projektu
+Projekt symulujący Turniej Axelroda dla co najmniej 9 różnych strategii w iterowanym dylemacie więźnia. Programy grają ze sobą 1000 razy (każdy z każdym). Wyniki są prezentowane w aplikacji internetowej.
 
-## Available Scripts
+Technologie
 
-In the project directory, you can run:
+* React.js
+* JavaScript
+* CSS
 
-### `npm start`
+Architektura i narzędzia
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+a. Generatory komponentów
+W projekcie zastosowano komponenty React.js, które są podstawowymi blokami budującymi aplikację. Każdy komponent odpowiada za konkretną funkcjonalność lub część interfejsu użytkownika. Główne komponenty to:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* App.js: Główny komponent aplikacji, zarządzający strukturą aplikacji.
 
-### `npm test`
+b. Szablony HTML
+Szablony HTML są zintegrowane bezpośrednio w komponentach React. Każdy komponent React używa JSX, aby definiować strukturę HTML dla tej części interfejsu użytkownika.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Struktura projektu
 
-### `npm run build`
+axelrod-tournament/
+├── node_modules/
+├── public/
+├── src/
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
+│   ├── logo.svg
+│   ├── reportWebVitals.js
+│   ├── setupTests.js
+│   ├── strategies.js
+│   └── styles.css
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Instrukcja uruchomienia
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Zainstaluj Node.js i npm.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Sklonuj repozytorium:
 
-### `npm run eject`
+### git clone https://github.com/davkooz/axelrod-tournament.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Przejdź do katalogu projektu:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### cd axelrod-tournament
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Zainstaluj zależności:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### npm install
 
-## Learn More
+Uruchom aplikację:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Otwórz przeglądarkę i przejdź do http://localhost:3000, aby zobaczyć działającą aplikację.
 
-### Code Splitting
+Opis strategii
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Zawsze współpracuje: Zawsze wybiera współpracę.
+Zawsze zdradza: Zawsze wybiera zdradę.
+Losowa: Losowo wybiera współpracę lub zdradę.
+Wet za wet: Powtarza ostatni ruch przeciwnika.
+Mściwy: Zdradza, jeśli przeciwnik kiedykolwiek zdradził.
+Pawłow: Współpracuje, jeśli ostatni ruch obu graczy był taki sam, inaczej zdradza.
 
-### Analyzing the Bundle Size
+Moje dane
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Dawid Kuzmicz 157052
